@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Цифрова клавіатура</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <form class="form" method="post">
+    <input type="text" class="form__result" disabled>
+      <div class="pin-code">
+        <div class="pin-code__keyboard keyboard">
+          <button type="button" value="1" class="keyboard__button">1</button>
+          <button type="button" value="2" class="keyboard__button">2</button>
+          <button type="button" value="3" class="keyboard__button">3</button>
+          <button type="button" value="4" class="keyboard__button">4</button>
+          <button type="button" value="5" class="keyboard__button">5</button>
+          <button type="button" value="6" class="keyboard__button">6</button>
+          <button type="button" value="7" class="keyboard__button">7</button>
+          <button type="button" value="8" class="keyboard__button">8</button>
+          <button type="button" value="9" class="keyboard__button">9</button>
+          <button type="button" class="keyboard__button inactive" disabled>.</button>
+          <button type="button" value="0" class="keyboard__button">0</button>
+          <button type="button" class="keyboard__button inactive" disabled>.</button>
+        </div>
+        <div class="pin-code__controll controll">
+          <button type="button" class="controll__button cancel">cancel</button>
+          <button type="button" class="controll__button clear">clear</button>
+          <button type="button" class="controll__button enter">enter</button>
+          <button type="button" class="controll__button hide">hide</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

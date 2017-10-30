@@ -1,0 +1,134 @@
+@import url('../fonts/stylesheet.css');
+body {
+  font: 16px 'HelveticaLight', Helvetica;
+}
+.form {
+  background-color: #fff;
+  max-width: 450px;
+  margin: 5% auto;
+  padding: 5%;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+.form__result {
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  font-size: 1.25rem;
+  margin: 2% auto 10%;
+  padding: 4px 10%;
+  box-sizing: border-box;
+  outline: none;
+}
+.pin-code {
+  display: flex;
+}
+.keyboard {
+  max-width: 280px;
+}
+.keyboard__button {
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  background: #fff;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  margin: 8px;
+  outline: none;
+}
+.keyboard__button:hover {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.controll {
+  max-width: 74px;
+}
+.controll__button {
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  background: #fff;
+  width: 55px;
+  height: 55px;
+  font-size: 0.62rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  margin: 8px;
+  outline: none;
+}
+.controll__button:hover {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.cancel {
+  border: 1px solid #f7786b;
+}
+.cancel:hover {
+  box-shadow: inset 0 0 15px rgba(255, 0, 0, 0.2), 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 1px 0 rgba(255, 0, 0, 0.1);
+}
+.clear {
+  border: 1px solid #ffcc5c;
+}
+.clear:hover {
+  box-shadow: inset 0 0 15px rgba(255, 191, 0, 0.4), 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 1px 0 rgba(255, 191, 0, 0.2);
+}
+.enter {
+  border: 1px solid #86af49;
+}
+.enter:hover {
+  box-shadow: inset 0 0 15px rgba(0, 255, 0, 0.3), 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 1px 0 rgba(0, 255, 0, 0.1);
+}
+.hide {
+  border: 1px solid #4682B4;
+}
+.hide:hover {
+  box-shadow: inset 0 0 15px rgba(0, 0, 250, 0.4), 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 1px 0 rgba(0, 0, 255, 0.1);
+}
+.inactive {
+  cursor: default;
+}
+@media screen and (max-width: 600px) {
+  .form {
+    max-width: 300px;
+    margin: 5% auto;
+    padding: 5%;
+  }
+  .keyboard {
+    max-width: 180px;
+  }
+  .keyboard__button {
+    width: 40px;
+    height: 40px;
+    margin: 6px;
+  }
+  .controll {
+    max-width: 74px;
+  }
+  .controll__button {
+    width: 40px;
+    height: 40px;
+    font-size: 0.45rem;
+    overflow: visible;
+    margin: 6px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .form {
+    max-width: 200px;
+  }
+  .pin-code {
+    flex-wrap: wrap;
+  }
+  .keyboard {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .controll {
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
